@@ -1,0 +1,157 @@
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+#bar2 {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    #bar1 {
+        display: none;
+    }
+    #bar2 {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px
+    }
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+/* Menu */
+
+.header__wrapper {
+    min-height: 640px;
+    position: relative;
+    margin: 5rem 0;
+}
+
+.banner {
+    width: 100%;
+    position: absolute;
+}
+
+.banner-version {
+    background: linear-gradient(60deg, #000000, #303030);
+    border-radius: 50%;
+    width: 595px;
+    height: 595px;
+    margin: auto;
+}
+
+.header__menu {
+    position: absolute;
+    width: 100%;
+    top: calc(45% - 29px/2 + 0.5px);
+}
+
+.header__menu ul {
+    padding-inline-start: 0;
+}
+
+.header__menu ul li {
+    list-style: none;
+    display: inline;
+    margin-right: 14%;
+}
+
+.header__menu ul li a {
+    text-decoration: none;
+    color: #ffffffb3;
+    font-size: 30px;
+}
+
+.header__menu ul li a:hover {
+    color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+    .header__menu ul li {
+        margin: 0 5%;
+    }
+    .header__menu {
+        position: absolute;
+        width: 100%;
+        top: calc(45% - 29px/2 + 0.5px);
+    }
+    .header__menu ul {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .banner {
+        top: 20%;
+    }
+    .banner-version {
+        background: linear-gradient(60deg, #000000, #303030);
+        border-radius: 50%;
+        width: 350px;
+        height: 350px;
+        margin: auto;
+    }
+    .header__menu ul li {
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 5rem;
+    }
+    .header__menu {
+        position: absolute;
+        width: 100%;
+        top: calc(10% - 29px/2 + 0.5px);
+    }
+    .header__wrapper {
+        min-height: 640px;
+        position: relative;
+        margin: 3rem 0;
+    }
+}

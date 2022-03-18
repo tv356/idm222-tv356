@@ -1,0 +1,267 @@
+.version img {
+    padding-top: 0;
+    width: 100%;
+}
+
+.version {
+    background: linear-gradient(60deg, #000000, #303030);
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+}
+
+.name-version {
+    padding-right: 30px;
+    color: #dcdcdc80;
+}
+
+h3 {
+    text-transform: uppercase;
+    line-height: 25px;
+}
+
+.zodiac-item td {
+    padding-bottom: 10px;
+}
+
+#created {
+    line-height: 20px;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    /* max-width: 1000px; */
+    position: relative;
+    margin: auto;
+    height: 500px;
+    margin-top: 3rem;
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+
+/* @-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+} */
+
+#dot {
+    display: none;
+}
+
+.vertical {
+    font-size: 20px;
+    padding-top: 10%;
+}
+
+.fire-sign_item img {
+    border-radius: 30px;
+}
+
+.fire-sign_item .row {
+    margin-top: 3rem;
+}
+
+.those {
+    position: relative;
+    height: 600px;
+}
+
+.those .those-with {
+    position: absolute;
+    z-index: -1;
+    left: 40%;
+    top: 7%;
+}
+
+.those-text {
+    font-size: 24px;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+
+.three-fire {
+    position: relative;
+}
+
+.three-fire_right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: -120px;
+}
+
+.home-fire {
+    margin-top: 5rem;
+    margin-bottom: 20%;
+    position: relative;
+}
+
+
+/* .home-fire_right {
+    position: absolute;
+    right: 0;
+} */
+
+.home-title {
+    padding-top: 30%;
+    font-size: 40px;
+}
+
+.element {
+    padding: 6rem 0;
+}
+
+.element-bor {
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 13px 52px;
+}
+
+#dreams {
+    display: none;
+}
+
+.version-those {
+    background: linear-gradient(60deg, #000000, #303030);
+    border-radius: 50%;
+    width: 550px;
+    height: 550px;
+}
+
+.fire-sign h3 {
+    padding: 0 30%;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+@media screen and (max-width: 992px) {
+    .vertical {
+        padding-top: 4%;
+    }
+    .slideshow-container {
+        height: 300px;
+    }
+    .home-title {
+        padding-top: 15%;
+    }
+    .those .those-with {
+        left: 10%;
+    }
+    .three-fire_right {
+        margin-bottom: -70px;
+    }
+    .fire-sign h3 {
+        padding: 0 10%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .vertical {
+        display: none;
+    }
+    .slideshow-container {
+        height: 130px;
+    }
+    .fire-sign-item {
+        display: none;
+    }
+    .those,
+    .three-fire,
+    .element {
+        display: none;
+    }
+    #dreams {
+        display: block;
+        line-height: 30px;
+        font-size: 18px;
+    }
+    .home-title {
+        padding-top: 0;
+        font-size: 18px;
+    }
+    .home-title {
+        padding-top: 35%;
+    }
+    .home-fire {
+        margin-top: 3rem;
+        margin-bottom: 20%;
+        position: relative;
+    }
+    .fire-sign h3 {
+        padding: 0 5%;
+    }
+}
