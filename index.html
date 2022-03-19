@@ -11,6 +11,63 @@
     <link href="css/navbar.css" rel="stylesheet">
 </head>
 
+<style>
+        .flip-box {
+            perspective: 1000px;
+            height: 604px;
+        }
+        
+        .flip-box-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+        
+        .flip-box:hover .flip-box-inner {
+            transform: rotateY(180deg);
+        }
+        
+        .flip-box-front,
+        .flip-box-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        
+        .flip-box-back {
+            transform: rotateY(180deg);
+        }
+        
+        @media screen and (max-width: 992px) {
+            .flip-box {
+                height: 320px;
+            }
+        }
+        
+        @media screen and (max-width: 767px) {
+            .flip-box {
+                height: 920px;
+            }
+        }
+        
+        @media screen and (max-width: 524px) {
+            .flip-box {
+                height: 680px;
+            }
+        }
+        
+        @media screen and (max-width: 280px) {
+            .flip-box {
+                height: 480px;
+            }
+        }
+    </style>
+
 <body>
 
 
@@ -18,7 +75,7 @@
         <header class="header">
             <nav class="d-flex justify-between">
                 <div>
-                    CV
+                    CHERYLWONDERSHORT
                 </div>
                 <div>
                     <a href="./menu.html" id="bar1">
@@ -31,6 +88,7 @@
                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                         <div class="overlay-content">
                             <a href="index.html">Home</a>
+                            <a href="viewAll.html">View All</a>
                             <a href="fire.html">Fire</a>
                             <a href="water.html">Water</a>
                             <a href="air.html">Air</a>
@@ -68,31 +126,77 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="pad">
-                                <img width="100%" src="./images/img/AIR.jpg">
+                                <a href="air.html"><img width="100%" src="./images/img/AIR.jpg"></a>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="pad">
-                                <img width="100%" src="./images/img/fire.jpg">
+                                <a href="fire.html"><img width="100%" src="./images/img/fire.jpg"></a>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="pad">
-                                <img width="100%" src="./images/img/water.jpg">
+                               <a href="water.html"> <img width="100%" src="./images/img/water.jpg"></a>
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="pad">
-                                <img width="100%" src="./images/img/earth.jpg">
+                               <a href="earth.html"> <img width="100%" src="./images/img/earth.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                        <div class="zodiac text-center">
+                <h1>SOME POPULAR CARDS</h1>
+                <a href="viewAll.html"><p><i>Click here to view all cards</i></p></a>
+
+                 <div class="row">
+                <div class="col-4">
+                    <div class="pad">
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <img width="100%" src="./images/img/scor 1.png">
+                                </div>
+                                <div class="flip-box-back">
+                                    <img width="100%" src="./images/img/scor (back) 1.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="pad">
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <img width="100%" src="./images/img/can 1.png">
+                                </div>
+                                <div class="flip-box-back">
+                                    <img width="100%" src="./images/img/cancer (back) 1.png">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="pad">
+                        <div class="flip-box">
+                            <div class="flip-box-inner">
+                                <div class="flip-box-front">
+                                    <img width="100%" src="./images/img/pis1.png">
+                                </div>
+                                <div class="flip-box-back">
+                                    <img width="100%" src="./images/img/pis2.png">
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="dcad mt-5">
-                <img width="100%" src="./images/img/dcads-min.png">
-            </div>
 
         </div>
         <footer class="mt-5">
